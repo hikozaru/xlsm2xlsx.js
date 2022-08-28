@@ -11,7 +11,7 @@ for (var i = 0; i < args.length; i++ ) {
   // 特定の拡張子のみ処理を実施
   var orgExtension = orgFilename.split('.').pop();
   if( orgExtension == 'xlsm' ){
-    var baseName = orgFilename.substring(0, orgFilename.indexOf('.'+orgExtension))
+    var baseName = orgFilename.substring(0, orgFilename.indexOf('.'+orgExtension));
 
     // ファイルを開いて形式を変更して保存
     var book = ExcelApp.Workbooks.Open( orgFilename );
